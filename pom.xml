@@ -89,6 +89,7 @@
 				<version>2.22.2</version>
 				<configuration>
 					<argLine>${argLine} -Xmx4096</argLine>
+					<forkedProcessExitTimeoutInSeconds>120</forkedProcessExitTimeoutInSeconds>
 				</configuration>
 			</plugin>
 
