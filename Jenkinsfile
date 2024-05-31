@@ -7,7 +7,6 @@ pipeline {
 
 environment {
     PATH = "/opt/maven-3.9.7/bin:$PATH"
-    JAVA_HOME = "/usr/bin/java"
 }
 
     stages {
