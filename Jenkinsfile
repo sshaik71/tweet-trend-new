@@ -10,7 +10,7 @@ environment {
 }
 
     stages {
-        stage ("Buils"){
+        stage ("Builds"){
              steps{
                 sh 'mvn clean install'
              }
