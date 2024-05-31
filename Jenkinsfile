@@ -1,11 +1,18 @@
 pipeline {
-    agent any
-
-    stages {
-        stage('clone code') {
-            steps {
-                git branch: 'main', url: 'https://github.com/sshaik71/tweet-trend-new.git'
-            }
+    agent {
+        node{
+            label 'maven-slave'
         }
     }
+
+environment {
+    PATH = "/opt/maven-3.9.7/bin:$PATH"
+    JAVA_HOME = "/usr/bin/java"
 }
+
+    stages {
+        steps{
+            sh 'maven clean deploy'
+        }
+    }
+} 
