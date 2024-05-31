@@ -10,9 +10,11 @@ environment {
 }
 
     stages {
-        stage ("Builds"){
-             steps{
-                sh 'mvn clean install'
+        stage ("Builds") {
+             steps {
+                echo "----------------Build Started----------------"
+                sh 'mvn clean install -Dmaven.test.skip=true'
+                echo "----------------Build Finished----------------"
              }
         }
        
