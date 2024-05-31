@@ -13,7 +13,7 @@ environment {
         stage ("Builds") {
              steps {
                 echo "----------------Build Started----------------"
-                sh 'mvn clean install -Dmaven.test.skip=true'
+                sh 'mvn clean deploy -Dmaven.test.skip=true'
                 echo "----------------Build Finished----------------"
              }
         }
