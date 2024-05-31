@@ -20,10 +20,10 @@ environment {
 
         stage('SonarQube analysis') {
             environment {
-                scannerHome = tool 'my_sonar_scanner';
+                scannerHome = tool 'my_sonar_scanner'; //tool name in jenkins soanrqube tool
                 }
             steps{
-                withSonarQubeEnv('My SonarQube Server') { // If you have configured more than one global server connection, you can specify its name
+                withSonarQubeEnv('My SonarQube Server') { // If you have configured more than one global server connection, you can specify its name in jenkins config servers
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
              }
