@@ -13,7 +13,7 @@ environment {
     stages {
         stage ("Buils"){
              steps{
-                sh 'maven clean deploy'
+                sh 'mvn clean deploy'
              }
         }
        
