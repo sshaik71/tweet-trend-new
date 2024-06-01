@@ -58,7 +58,7 @@ environment {
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "api/maven/mvn-libs-snapshot/{1}",
+                              "target": "api/maven/mvn-libs-snapshot/",
                               "flat": "false",
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
