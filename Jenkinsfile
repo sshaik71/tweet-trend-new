@@ -1,5 +1,5 @@
 def registry = 'https://rahaman.jfrog.io/'
-def imageName = 'rahaman.jfrog.io/valaxy-docker-remote/ttrend'
+def imageName = 'rahaman.jfrog.io/valaxy-docker/ttrend'
 def version   = '2.1.2'
 
 pipeline {
@@ -87,7 +87,7 @@ environment {
       }
     }
 
-    stage (" Docker Publish "){
+            stage (" Docker Publish "){
         steps {
             script {
                echo '<--------------- Docker Publish Started --------------->'  
